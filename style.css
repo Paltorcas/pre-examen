@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html,
+                    body {
+                        min-height: 100%;
+                        color: #a2b679;
+                        font-family:'Lato', sans-serif;
+                        background-color: #ebf1de;
+                        /*noten que color y background-color se repite en header#titular*/
+                    }
+                    header#titular {
+                        min-height: 100vh;
+                        color: #fff;
+                        background-color: #ebf1de;
+                        background-repeat: no-repeat;
+                        background-attachment: scroll;
+                        background-position: center top;
+                        background-size: 100% auto;
+                        background-image: url("img/bg-titular-sm.jpg");
+                        /* Uso una imagen cuadrada para pantallas más angosta*/
+                    }
+
+                    @media (min-width: 768px) {
+                        header#titular {
+                            background-image: url("img/bg-titular-md.jpg");
+                            /* Uso una imagen apaisada para pantallas más anchas*/
+                        }
+                    }
+                    header#titular div.container {
+                        height: 100vh; /*  Misma altura que el header */
+                    }
+
+                    header#titular h1 {
+                    color: #869959;
+                    font-family: 'Just Another Hand',cursive;
+                    font-size: 50px;
+
+                    }
+
+                    header#titular h2 {
+                        color:rgba(134,153,89,0.6); /* en caso quieran un texto blanco un poco más traslúcido que el título de primer nivel */
+                        font-family: 'Just Another Hand',cursive;
+                    }
+
+
+
+                    h2, h4, h5 {
+                        font-family:'Just Another Hand',cursive;
+                        color: #869959;
+
+                    }
